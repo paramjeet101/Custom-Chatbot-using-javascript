@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="chatbot" id="foropen">
+            <div class="upper" style="display: flex;">
+                <div style="display: flex;">
+                    <img src="chatbot.png" style="width: 55px;height:60px;padding-left:17px;padding-top:6px;" alt="">
+                    <div style="padding-top:10px;display:flex;flex-direction:column;padding-left:7px;">
+                        <strong style="font-size: 30px;">ChatBot</strong>
+                        <span  style="padding-left:3px;">online</span>
+                    </div>
+                    
+                </div>
+                <div style="padding-left:120px;padding-top:20px">
+                    <button style="font-size:20px;background-color:white;border:none;" onclick="chatbotclose()"><img src="close.jpg"style="width:30px;" alt="wait"></button>
+                </div>
+            </div>
+            <div class="middle" id="chatmessage" style="font-size:17px;">
+               <ul class="chat-message">
+                <li class="chat bot">
+                    <Span class="botspan"><img src="robo2.0.png" style="width: 30px"></Span>
+                    <p class="bot-chat">Hi there <br> How can i help you ?</p>
+                </li>
+               </ul>
+            </div>
+            <div class="lower">
+                <div style="display: flex;background-color:white;">
+                    <input type="text" class="messagebox" placeholder="Type your message here" id="user">
+                    <div style="padding-left:14px;padding-top:10px;background-color: white;">
+                        <a id="generateData"><img src="send.png" alt="" style="width: 30px;"></a>
+                    </div>
+                </div>
+                <div style="text-align:center;padding-top:3px ;">
+                    <span>Powered by <strong>SciAstra</strong></span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bot-img" id="afteropen" >
+            <h3 style="color:white;margin-right:5px">Chat with us</h3>
+            <img src="robot-assistant.png" onclick="chatbotopen()" style="width: 80px;" alt="wait">
+        </div>
+    </div>
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
